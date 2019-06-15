@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Шифр табличной маршрутной перестановки.: Исходный файл Perestanovka.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Шифр табличной маршрутной перестановки.
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Perestanovka.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Perestanovka_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classPerestanovka.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPerestanovka.html">Perestanovka</a>{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classPerestanovka.html#a7bd5d0e646ddcc4436dc058f505916c1">   19</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPerestanovka.html#a7bd5d0e646ddcc4436dc058f505916c1">k</a>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    std::string <a class="code" href="classPerestanovka.html#a94bea2b10ae0897d6455ae6fd85994e7">getValidOpenText</a>(<span class="keyword">const</span> std::string &amp; s);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    std::string <a class="code" href="classPerestanovka.html#a990a3d3603a13242b16c2ba829405788">getValidCipherText</a>(<span class="keyword">const</span> std::string &amp; s);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classPerestanovka.html#aa911a70c97003bd545ed52a4832c3d2b">Perestanovka</a>()=<span class="keyword">delete</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classPerestanovka.html#aa911a70c97003bd545ed52a4832c3d2b">Perestanovka</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> k);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::string  <a class="code" href="classPerestanovka.html#a95ea7acda9a02a89903e4058a664fbcd">shifr</a>(<span class="keyword">const</span> std::string&amp; t);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::string  <a class="code" href="classPerestanovka.html#ac0c30a5771b3de3c9bd2dde54cc93688">rashifr</a>(<span class="keyword">const</span> std::string&amp; z); </div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classcipher__error.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcipher__error.html">cipher_error</a>: <span class="keyword">public</span> std::invalid_argument</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classcipher__error.html">cipher_error</a> (<span class="keyword">const</span> std::string&amp; what_arg):</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        std::invalid_argument(what_arg) {}</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classcipher__error.html">cipher_error</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>* what_arg):</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::invalid_argument(what_arg) {}</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div><div class="ttc" id="classPerestanovka_html_a94bea2b10ae0897d6455ae6fd85994e7"><div class="ttname"><a href="classPerestanovka.html#a94bea2b10ae0897d6455ae6fd85994e7">Perestanovka::getValidOpenText</a></div><div class="ttdeci">std::string getValidOpenText(const std::string &amp;s)</div><div class="ttdoc">Метод проверки открытого текста. </div><div class="ttdef"><b>Definition:</b> Perestanovka.cpp:81</div></div>
+<div class="ttc" id="classPerestanovka_html_a990a3d3603a13242b16c2ba829405788"><div class="ttname"><a href="classPerestanovka.html#a990a3d3603a13242b16c2ba829405788">Perestanovka::getValidCipherText</a></div><div class="ttdeci">std::string getValidCipherText(const std::string &amp;s)</div><div class="ttdoc">Метод проверки зашифрованного текста. </div><div class="ttdef"><b>Definition:</b> Perestanovka.cpp:95</div></div>
+<div class="ttc" id="classcipher__error_html"><div class="ttname"><a href="classcipher__error.html">cipher_error</a></div><div class="ttdef"><b>Definition:</b> Perestanovka.h:49</div></div>
+<div class="ttc" id="classPerestanovka_html_a95ea7acda9a02a89903e4058a664fbcd"><div class="ttname"><a href="classPerestanovka.html#a95ea7acda9a02a89903e4058a664fbcd">Perestanovka::shifr</a></div><div class="ttdeci">std::string shifr(const std::string &amp;t)</div><div class="ttdoc">Метод для шифрования текста методом маршрутной табличной перестановки. </div><div class="ttdef"><b>Definition:</b> Perestanovka.cpp:10</div></div>
+<div class="ttc" id="classPerestanovka_html_aa911a70c97003bd545ed52a4832c3d2b"><div class="ttname"><a href="classPerestanovka.html#aa911a70c97003bd545ed52a4832c3d2b">Perestanovka::Perestanovka</a></div><div class="ttdeci">Perestanovka()=delete</div><div class="ttdoc">Конструктор без параметра. </div></div>
+<div class="ttc" id="classPerestanovka_html_a7bd5d0e646ddcc4436dc058f505916c1"><div class="ttname"><a href="classPerestanovka.html#a7bd5d0e646ddcc4436dc058f505916c1">Perestanovka::k</a></div><div class="ttdeci">int k</div><div class="ttdoc">Ключ </div><div class="ttdef"><b>Definition:</b> Perestanovka.h:19</div></div>
+<div class="ttc" id="classPerestanovka_html"><div class="ttname"><a href="classPerestanovka.html">Perestanovka</a></div><div class="ttdoc">Шифрование методом табличной маршрутной перестановки. </div><div class="ttdef"><b>Definition:</b> Perestanovka.h:17</div></div>
+<div class="ttc" id="classPerestanovka_html_ac0c30a5771b3de3c9bd2dde54cc93688"><div class="ttname"><a href="classPerestanovka.html#ac0c30a5771b3de3c9bd2dde54cc93688">Perestanovka::rashifr</a></div><div class="ttdeci">std::string rashifr(const std::string &amp;z)</div><div class="ttdoc">Метод для расшифровки зашифрованного текста по известному ключу. </div><div class="ttdef"><b>Definition:</b> Perestanovka.cpp:42</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

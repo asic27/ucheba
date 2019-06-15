@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Labaratorka2" Database="">
+  <Project Name="alg1" Path="alg1/alg1.project" Active="No"/>
+  <Project Name="alg2" Path="alg2/alg2.project" Active="No"/>
+  <Project Name="alg3" Path="alg3/alg3.project" Active="No"/>
+  <Project Name="alg4" Path="alg4/alg4.project" Active="No"/>
+  <Project Name="alg5" Path="alg5/alg5.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="alg1" ConfigName="Debug"/>
+      <Project Name="alg2" ConfigName="Debug"/>
+      <Project Name="alg3" ConfigName="Debug"/>
+      <Project Name="alg4" ConfigName="Debug"/>
+      <Project Name="alg5" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="alg1" ConfigName="Release"/>
+      <Project Name="alg2" ConfigName="Release"/>
+      <Project Name="alg3" ConfigName="Release"/>
+      <Project Name="alg4" ConfigName="Release"/>
+      <Project Name="alg5" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

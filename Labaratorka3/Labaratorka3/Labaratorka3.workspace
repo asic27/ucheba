@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Labaratorka3" Database="">
+  <Project Name="prog1" Path="prog1/prog1.project" Active="No"/>
+  <Project Name="prog2" Path="prog2/prog2.project" Active="No"/>
+  <Project Name="Tcezar" Path="Tcezar/Tcezar.project" Active="No"/>
+  <Project Name="prog3" Path="prog3/prog3.project" Active="No"/>
+  <Project Name="ls" Path="ls/ls.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="prog1" ConfigName="Debug"/>
+      <Project Name="prog2" ConfigName="Debug"/>
+      <Project Name="Tcezar" ConfigName="Debug"/>
+      <Project Name="prog3" ConfigName="Debug"/>
+      <Project Name="ls" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="prog1" ConfigName="Release"/>
+      <Project Name="prog2" ConfigName="Release"/>
+      <Project Name="Tcezar" ConfigName="Release"/>
+      <Project Name="prog3" ConfigName="Release"/>
+      <Project Name="ls" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

@@ -1,0 +1,577 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./cl5</line>
+</preamble>
+
+<pid>14357</pid>
+<ppid>14356</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--tool=memcheck</arg>
+    <arg>--xml=yes</arg>
+    <arg>--fullpath-after=</arg>
+    <arg>--gen-suppressions=all</arg>
+    <arg>--xml-file=/home/asic27/Labrab4/.codelite/valgrind.memcheck.log.xml</arg>
+    <arg>--suppressions=/home/asic27/Labrab4/.codelite/valgrind.memcheck.supp</arg>
+    <arg>--leak-check=yes</arg>
+    <arg>--track-origins=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./cl5</exe>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.102 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 1</what>
+  <stack>
+    <frame>
+      <ip>0x4EE50A0</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25</obj>
+      <fn>std::basic_istream&lt;char, std::char_traits&lt;char&gt; &gt;&amp; std::operator&gt;&gt;&lt;char, std::char_traits&lt;char&gt; &gt;(std::basic_istream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, char*)</fn>
+    </frame>
+    <frame>
+      <ip>0x401242</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>operator&gt;&gt;(std::istream&amp;, String&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B70</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x5ac2c81 is 0 bytes after a block of size 1 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2E80F</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B54</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_</fun> </sframe>
+    <sframe> <fun>_ZrsRSiR6String</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_
+   fun:_ZrsRSiR6String
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+</error>
+
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_</fun> </sframe>
+    <sframe> <fun>_ZrsRSiR6String</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_
+   fun:_ZrsRSiR6String
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+<error>
+  <unique>0x6</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 1</what>
+  <stack>
+    <frame>
+      <ip>0x4EE503C</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25</obj>
+      <fn>std::basic_istream&lt;char, std::char_traits&lt;char&gt; &gt;&amp; std::operator&gt;&gt;&lt;char, std::char_traits&lt;char&gt; &gt;(std::basic_istream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, char*)</fn>
+    </frame>
+    <frame>
+      <ip>0x401242</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>operator&gt;&gt;(std::istream&amp;, String&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B70</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x5ac2c87 is 6 bytes after a block of size 1 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2E80F</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B54</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_</fun> </sframe>
+    <sframe> <fun>_ZrsRSiR6String</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_
+   fun:_ZrsRSiR6String
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+</error>
+
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_</fun> </sframe>
+    <sframe> <fun>_ZrsRSiR6String</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZStrsIcSt11char_traitsIcEERSt13basic_istreamIT_T0_ES6_PS3_
+   fun:_ZrsRSiR6String
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+<error>
+  <unique>0x7</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 1</what>
+  <stack>
+    <frame>
+      <ip>0x401269</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>operator&gt;&gt;(std::istream&amp;, String&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B70</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x5ac2c81 is 0 bytes after a block of size 1 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2E80F</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B54</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZrsRSiR6String</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZrsRSiR6String
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+</error>
+
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZrsRSiR6String</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZrsRSiR6String
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+<error>
+  <unique>0xe</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 1</what>
+  <stack>
+    <frame>
+      <ip>0x40120A</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>String::String(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B7F</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x5ac3165 is 0 bytes after a block of size 5 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2E80F</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4011D5</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>String::String(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B7F</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZN6StringC1EPKc</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZN6StringC1EPKc
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+</error>
+
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZN6StringC1EPKc</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZN6StringC1EPKc
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+<error>
+  <unique>0xf</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 1</what>
+  <stack>
+    <frame>
+      <ip>0x40117A</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>String::String(String const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B8E</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x5ac3165 is 0 bytes after a block of size 5 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2E80F</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4011D5</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>String::String(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x400B7F</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZN6StringC1ERKS_</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZN6StringC1ERKS_
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+</error>
+
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZN6StringC1ERKS_</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZN6StringC1ERKS_
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+<error>
+  <unique>0x10</unique>
+  <tid>1</tid>
+  <kind>InvalidWrite</kind>
+  <what>Invalid write of size 1</what>
+  <stack>
+    <frame>
+      <ip>0x40120A</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>String::String(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x400BAA</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x5ac3257 is 0 bytes after a block of size 7 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2E80F</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x4011D5</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>String::String(char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x400BAA</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZN6StringC1EPKc</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZN6StringC1EPKc
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+</error>
+
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Addr1</skind>
+    <sframe> <fun>_ZN6StringC1EPKc</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Addr1
+   fun:_ZN6StringC1EPKc
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+<error>
+  <unique>0x11</unique>
+  <tid>1</tid>
+  <kind>UninitCondition</kind>
+  <what>Conditional jump or move depends on uninitialised value(s)</what>
+  <stack>
+    <frame>
+      <ip>0x4C30F78</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>strlen</fn>
+    </frame>
+    <frame>
+      <ip>0x4F4E1F8</ip>
+      <obj>/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25</obj>
+      <fn>std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp; std::operator&lt;&lt; &lt;std::char_traits&lt;char&gt; &gt;(std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;, char const*)</fn>
+    </frame>
+    <frame>
+      <ip>0x400CA2</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Uninitialised value was created by a heap allocation</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2E80F</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>operator new[](unsigned long)</fn>
+    </frame>
+    <frame>
+      <ip>0x400F61</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>String::operator+(String const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x400BDF</ip>
+      <obj>/home/asic27/Labrab4/cl5/Release/cl5</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Cond</skind>
+    <sframe> <fun>strlen</fun> </sframe>
+    <sframe> <fun>_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Cond
+   fun:strlen
+   fun:_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+</error>
+
+  <suppression>
+    <sname>insert_a_suppression_name_here</sname>
+    <skind>Memcheck:Cond</skind>
+    <sframe> <fun>strlen</fun> </sframe>
+    <sframe> <fun>_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc</fun> </sframe>
+    <sframe> <fun>main</fun> </sframe>
+    <rawtext>
+<![CDATA[
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Cond
+   fun:strlen
+   fun:_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+   fun:main
+}
+]]>
+    </rawtext>
+  </suppression>
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:08.533 </time>
+</status>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x11</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x10</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xf</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0xe</unique>
+  </pair>
+  <pair>
+    <count>7</count>
+    <unique>0x7</unique>
+  </pair>
+  <pair>
+    <count>1</count>
+    <unique>0x6</unique>
+  </pair>
+  <pair>
+    <count>6</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

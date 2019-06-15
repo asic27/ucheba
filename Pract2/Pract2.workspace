@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Pract2" Database="">
+  <Project Name="time" Path="time/time.project" Active="No"/>
+  <Project Name="vector" Path="vector/vector.project" Active="No"/>
+  <Project Name="inteval" Path="inteval/inteval.project" Active="Yes"/>
+  <Project Name="Sortirovka" Path="Sortirovka/Sortirovka.project" Active="No"/>
+  <Project Name="Cards" Path="Cards/Cards.project" Active="No"/>
+  <Project Name="cck" Path="cck/cck.project" Active="No"/>
+  <Project Name="spisok" Path="spisok/spisok.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="time" ConfigName="Debug"/>
+      <Project Name="vector" ConfigName="Debug"/>
+      <Project Name="inteval" ConfigName="Debug"/>
+      <Project Name="Sortirovka" ConfigName="Debug"/>
+      <Project Name="Cards" ConfigName="Debug"/>
+      <Project Name="cck" ConfigName="Debug"/>
+      <Project Name="spisok" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="no">
+      <Environment/>
+      <Project Name="time" ConfigName="Release"/>
+      <Project Name="vector" ConfigName="Release"/>
+      <Project Name="inteval" ConfigName="Release"/>
+      <Project Name="Sortirovka" ConfigName="Release"/>
+      <Project Name="Cards" ConfigName="Release"/>
+      <Project Name="cck" ConfigName="Release"/>
+      <Project Name="spisok" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

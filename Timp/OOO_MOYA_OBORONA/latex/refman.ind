@@ -1,0 +1,44 @@
+\begin{theindex}
+
+  \item {cipher\+\_\+error}, \hyperpage{7}
+  \item {convert}
+    \subitem {mod\+Alpha\+Cipher}, \hyperpage{9}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {mod\+Alpha\+Cipher}, \hyperpage{9}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {mod\+Alpha\+Cipher}, \hyperpage{10}
+
+  \indexspace
+
+  \item {get\+Valid\+Cipher\+Text}
+    \subitem {mod\+Alpha\+Cipher}, \hyperpage{10}
+  \item {get\+Valid\+Key}
+    \subitem {mod\+Alpha\+Cipher}, \hyperpage{10}
+  \item {get\+Valid\+Open\+Text}
+    \subitem {mod\+Alpha\+Cipher}, \hyperpage{10}
+
+  \indexspace
+
+  \item {mod\+Alpha\+Cipher}, \hyperpage{8}
+    \subitem {convert}, \hyperpage{9}
+    \subitem {decrypt}, \hyperpage{9}
+    \subitem {encrypt}, \hyperpage{10}
+    \subitem {get\+Valid\+Cipher\+Text}, \hyperpage{10}
+    \subitem {get\+Valid\+Key}, \hyperpage{10}
+    \subitem {get\+Valid\+Open\+Text}, \hyperpage{10}
+    \subitem {mod\+Alpha\+Cipher}, \hyperpage{8}
+    \subitem {num\+Alpha}, \hyperpage{11}
+  \item {mod\+Alpha\+Cipher.\+h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {num\+Alpha}
+    \subitem {mod\+Alpha\+Cipher}, \hyperpage{11}
+
+\end{theindex}

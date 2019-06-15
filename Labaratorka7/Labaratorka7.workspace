@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Labaratorka7" Database="">
+  <Project Name="one" Path="one/one.project" Active="No"/>
+  <Project Name="two" Path="two/two.project" Active="Yes"/>
+  <Project Name="tree" Path="tree/tree.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Environment/>
+      <Project Name="one" ConfigName="Debug"/>
+      <Project Name="two" ConfigName="Debug"/>
+      <Project Name="tree" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="one" ConfigName="Release"/>
+      <Project Name="two" ConfigName="Release"/>
+      <Project Name="tree" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

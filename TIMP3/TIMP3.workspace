@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="TIMP3" Database="">
+  <Project Name="TEST" Path="TEST/TEST.project" Active="Yes"/>
+  <Project Name="TableTest" Path="TableTest/TableTest.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="TEST" ConfigName="Debug"/>
+      <Project Name="TableTest" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="TEST" ConfigName="Release"/>
+      <Project Name="TableTest" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

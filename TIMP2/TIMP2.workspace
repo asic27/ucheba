@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="TIMP2" Database="">
+  <Project Name="OOO_MOYA_OBORONA" Path="../Timp/OOO_MOYA_OBORONA/OOO_MOYA_OBORONA.project" Active="Yes"/>
+  <Project Name="Perestanovka" Path="../Timp/Perestanovka/Perestanovka.project" Active="No"/>
+  <Project Name="Pamagite" Path="../Timp/Pamagite/Pamagite.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="OOO_MOYA_OBORONA" ConfigName="Debug"/>
+      <Project Name="Perestanovka" ConfigName="Debug"/>
+      <Project Name="Pamagite" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="OOO_MOYA_OBORONA" ConfigName="Release"/>
+      <Project Name="Perestanovka" ConfigName="Release"/>
+      <Project Name="Pamagite" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

@@ -1,0 +1,137 @@
+\hypertarget{classPerestanovka}{}\section{Класс Perestanovka}
+\label{classPerestanovka}\index{Perestanovka@{Perestanovka}}
+
+
+Шифрование методом табличной маршрутной перестановки.  
+
+
+
+
+{\ttfamily \#include $<$Perestanovka.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPerestanovka_aa911a70c97003bd545ed52a4832c3d2b}{Perestanovka} ()=delete
+\begin{DoxyCompactList}\small\item\em Конструктор без параметра. \end{DoxyCompactList}\item 
+\hyperlink{classPerestanovka_a376d268a9c582ad2732d5013dc3ff08b}{Perestanovka} (const int \hyperlink{classPerestanovka_a7bd5d0e646ddcc4436dc058f505916c1}{k})
+\begin{DoxyCompactList}\small\item\em Конструктор для установки ключа. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classPerestanovka_a95ea7acda9a02a89903e4058a664fbcd}{shifr} (const std\+::string \&t)
+\begin{DoxyCompactList}\small\item\em Метод для шифрования текста методом маршрутной табличной перестановки. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classPerestanovka_ac0c30a5771b3de3c9bd2dde54cc93688}{rashifr} (const std\+::string \&z)
+\begin{DoxyCompactList}\small\item\em Метод для расшифровки зашифрованного текста по известному ключу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classPerestanovka_a94bea2b10ae0897d6455ae6fd85994e7}{get\+Valid\+Open\+Text} (const std\+::string \&s)\hypertarget{classPerestanovka_a94bea2b10ae0897d6455ae6fd85994e7}{}\label{classPerestanovka_a94bea2b10ae0897d6455ae6fd85994e7}
+
+\begin{DoxyCompactList}\small\item\em Метод проверки открытого текста. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classPerestanovka_a990a3d3603a13242b16c2ba829405788}{get\+Valid\+Cipher\+Text} (const std\+::string \&s)\hypertarget{classPerestanovka_a990a3d3603a13242b16c2ba829405788}{}\label{classPerestanovka_a990a3d3603a13242b16c2ba829405788}
+
+\begin{DoxyCompactList}\small\item\em Метод проверки зашифрованного текста. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classPerestanovka_a7bd5d0e646ddcc4436dc058f505916c1}{k}\hypertarget{classPerestanovka_a7bd5d0e646ddcc4436dc058f505916c1}{}\label{classPerestanovka_a7bd5d0e646ddcc4436dc058f505916c1}
+
+\begin{DoxyCompactList}\small\item\em Ключ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Шифрование методом табличной маршрутной перестановки. 
+
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы shifr и rashifr. \begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка. 
+\end{DoxyWarning}
+
+
+\subsection{Конструктор(ы)}
+\index{Perestanovka@{Perestanovka}!Perestanovka@{Perestanovka}}
+\index{Perestanovka@{Perestanovka}!Perestanovka@{Perestanovka}}
+\subsubsection[{\texorpdfstring{Perestanovka()=delete}{Perestanovka()=delete}}]{\setlength{\rightskip}{0pt plus 5cm}Perestanovka\+::\+Perestanovka (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [delete]}}\hypertarget{classPerestanovka_aa911a70c97003bd545ed52a4832c3d2b}{}\label{classPerestanovka_aa911a70c97003bd545ed52a4832c3d2b}
+
+
+Конструктор без параметра. 
+
+Конструктор запрещён. \index{Perestanovka@{Perestanovka}!Perestanovka@{Perestanovka}}
+\index{Perestanovka@{Perestanovka}!Perestanovka@{Perestanovka}}
+\subsubsection[{\texorpdfstring{Perestanovka(const int k)}{Perestanovka(const int k)}}]{\setlength{\rightskip}{0pt plus 5cm}Perestanovka\+::\+Perestanovka (
+\begin{DoxyParamCaption}
+\item[{const int}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{classPerestanovka_a376d268a9c582ad2732d5013dc3ff08b}{}\label{classPerestanovka_a376d268a9c582ad2732d5013dc3ff08b}
+
+
+Конструктор для установки ключа. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em k} & -\/ ключ, целое, положительное число. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \hyperlink{classcipher__error}{cipher\+\_\+error},если} & ключ меньше или равен 1. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Методы}
+\index{Perestanovka@{Perestanovka}!rashifr@{rashifr}}
+\index{rashifr@{rashifr}!Perestanovka@{Perestanovka}}
+\subsubsection[{\texorpdfstring{rashifr(const std\+::string \&z)}{rashifr(const std::string &z)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Perestanovka\+::rashifr (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{z}
+\end{DoxyParamCaption}
+)}\hypertarget{classPerestanovka_ac0c30a5771b3de3c9bd2dde54cc93688}{}\label{classPerestanovka_ac0c30a5771b3de3c9bd2dde54cc93688}
+
+
+Метод для расшифровки зашифрованного текста по известному ключу. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em z} & Зашифрованный текст. Должен содержать только символы английского алфавита в верхнем регистре. Строка не должна быть пустой. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \hyperlink{classcipher__error}{cipher\+\_\+error},если} & строка пустая или встречена не английская буква в верхнем регистре. \\
+\hline
+\end{DoxyExceptions}
+\index{Perestanovka@{Perestanovka}!shifr@{shifr}}
+\index{shifr@{shifr}!Perestanovka@{Perestanovka}}
+\subsubsection[{\texorpdfstring{shifr(const std\+::string \&t)}{shifr(const std::string &t)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Perestanovka\+::shifr (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{classPerestanovka_a95ea7acda9a02a89903e4058a664fbcd}{}\label{classPerestanovka_a95ea7acda9a02a89903e4058a664fbcd}
+
+
+Метод для шифрования текста методом маршрутной табличной перестановки. 
+
+Запись в таблицу происходит слева направо, сверху вниз. Считывание из таблицы сверху вниз, справа налево 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em t} & Открытый текст. Не должен быть пустой строкой. Текст не должен быть меньше или равен длине ключа. Все не-\/буквы будут автоматически удалены. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \hyperlink{classcipher__error}{cipher\+\_\+error},если} & строка пустая или меньше или равна длине ключа. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Perestanovka_8h}{Perestanovka.\+h}\item 
+Perestanovka.\+cpp\end{DoxyCompactItemize}

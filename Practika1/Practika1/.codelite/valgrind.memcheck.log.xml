@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: ./proba</line>
+</preamble>
+
+<pid>32003</pid>
+<ppid>32002</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--tool=memcheck</arg>
+    <arg>--xml=yes</arg>
+    <arg>--fullpath-after=</arg>
+    <arg>--gen-suppressions=all</arg>
+    <arg>--xml-file=/home/asic27/Practika1/Practika1/.codelite/valgrind.memcheck.log.xml</arg>
+    <arg>--suppressions=/home/asic27/Practika1/Practika1/.codelite/valgrind.memcheck.supp</arg>
+    <arg>--leak-check=yes</arg>
+    <arg>--track-origins=yes</arg>
+  </vargv>
+  <argv>
+    <exe>./proba</exe>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.095 </time>
+</status>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:02.294 </time>
+</status>
+
+<errorcounts>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

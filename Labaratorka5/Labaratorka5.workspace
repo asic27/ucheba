@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Labaratorka5" Database="">
+  <Project Name="odin" Path="odin/odin.project" Active="No"/>
+  <Project Name="dwa" Path="dwa/dwa.project" Active="No"/>
+  <Project Name="chetiri" Path="tri/tri.project" Active="No"/>
+  <Project Name="pyt" Path="pyt/pyt.project" Active="No"/>
+  <Project Name="tri1" Path="tri1/tri1.project" Active="Yes"/>
+  <Project Name="Probapera" Path="Probapera/Probapera.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="odin" ConfigName="Debug"/>
+      <Project Name="dwa" ConfigName="Debug"/>
+      <Project Name="chetiri" ConfigName="Debug"/>
+      <Project Name="pyt" ConfigName="Debug"/>
+      <Project Name="tri1" ConfigName="Debug"/>
+      <Project Name="Probapera" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="odin" ConfigName="Release"/>
+      <Project Name="dwa" ConfigName="Release"/>
+      <Project Name="chetiri" ConfigName="Release"/>
+      <Project Name="pyt" ConfigName="Release"/>
+      <Project Name="tri1" ConfigName="Release"/>
+      <Project Name="Probapera" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

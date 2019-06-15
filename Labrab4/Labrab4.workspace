@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="Labrab4" Database="">
+  <Project Name="cl1" Path="cl1/cl1.project" Active="No"/>
+  <Project Name="cl2" Path="cl2/cl2.project" Active="No"/>
+  <Project Name="cl3" Path="cl3/cl3.project" Active="No"/>
+  <Project Name="cl4" Path="cl4/cl4.project" Active="No"/>
+  <Project Name="cl5" Path="cl5/cl5.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Environment/>
+      <Project Name="cl1" ConfigName="Debug"/>
+      <Project Name="cl2" ConfigName="Debug"/>
+      <Project Name="cl3" ConfigName="Debug"/>
+      <Project Name="cl4" ConfigName="Debug"/>
+      <Project Name="cl5" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="cl1" ConfigName="Release"/>
+      <Project Name="cl2" ConfigName="Release"/>
+      <Project Name="cl3" ConfigName="Release"/>
+      <Project Name="cl4" ConfigName="Release"/>
+      <Project Name="cl5" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
